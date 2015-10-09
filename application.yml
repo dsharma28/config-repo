@@ -1,3 +1,18 @@
+server:
+  port: 7002
+
+spring: 
+  cloud:
+    config:
+      discovery:
+        serviceId: configserver
+        enabled: true 
+
+eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${server.port}
+
 spring:
   profiles: dev
     datasource:
