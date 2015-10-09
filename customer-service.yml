@@ -14,16 +14,17 @@ eureka:
       instanceId: ${spring.application.name}:${server.port}
 
 spring:
-  profiles: dev
-    datasource:
-      url: jdbc:mysql://localhost/customer
-      username: root
-      password: admin
-      driver-class-name: com.mysql.jdbc.Driver
+  profiles: 
+    dev:
+      datasource:
+        url: jdbc:mysql://localhost/customer
+        username: root
+        password: admin
+        driver-class-name: com.mysql.jdbc.Driver
       
-    jpa:
-      hibernate:
-      ddl-auto: create-update
-      show-sql: true
+      jpa:
+        hibernate:
+         ddl-auto: create-update
+         show-sql: true
   
   
