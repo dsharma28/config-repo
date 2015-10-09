@@ -1,1 +1,8 @@
-greeting: Bonjour Apps Refreshed !!!!!
+spring:
+  profiles: dev
+    datasource:
+      url: jdbc:mysql://localhost/customer
+      username: root
+      password: admin
+      driver-class-name: com.mysql.jdbc.Driver
+  
