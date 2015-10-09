@@ -10,7 +10,7 @@ eureka:
       instanceId: ${spring.application.name}:${server.port}
 
 spring.datasource:
-    url: jdbc:mysql://localhost/policy
+    url: jdbc:mysql://localhost/customer
     username: root
     password: admin
     driver-class-name: com.mysql.jdbc.Driver
